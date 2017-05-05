@@ -1,6 +1,9 @@
 #HalClient.Net 
 A specialised http client  that simplifies communicating with API's that support the HAL media type.
 
+#HalClient.Std
+Minor changes to build as a Standard library for use in Core
+
 [![Build status](https://ci.appveyor.com/api/projects/status/klqo0binme3x9k3b/branch/master?svg=true)](https://ci.appveyor.com/project/wis3guy/halclient-net/branch/master)
 
 ##HAL Specification resources
