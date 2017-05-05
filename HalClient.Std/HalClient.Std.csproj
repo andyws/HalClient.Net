@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\HalClient.Net\CachingBehavior.cs" Link="CachingBehavior.cs" />
+    <Compile Include="..\HalClient.Net\HalHttpClient.cs" Link="HalHttpClient.cs" />
+    <Compile Include="..\HalClient.Net\HalHttpClientConfiguration.cs" Link="HalHttpClientConfiguration.cs" />
+    <Compile Include="..\HalClient.Net\HalHttpClientFactory.cs" Link="HalHttpClientFactory.cs" />
+    <Compile Include="..\HalClient.Net\HalHttpClientFactoryBase.cs" Link="HalHttpClientFactoryBase.cs" />
+    <Compile Include="..\HalClient.Net\HalHttpRequestException.cs" Link="HalHttpRequestException.cs" />
+    <Compile Include="..\HalClient.Net\HalHttpResponseMessage.cs" Link="HalHttpResponseMessage.cs" />
+    <Compile Include="..\HalClient.Net\IHalHttpClient.cs" Link="IHalHttpClient.cs" />
+    <Compile Include="..\HalClient.Net\IHalHttpClientConfiguration.cs" Link="IHalHttpClientConfiguration.cs" />
+    <Compile Include="..\HalClient.Net\IHalHttpClientFactory.cs" Link="IHalHttpClientFactory.cs" />
+    <Compile Include="..\HalClient.Net\IHalHttpResponseMessage.cs" Link="IHalHttpResponseMessage.cs" />
+    <Compile Include="..\HalClient.Net\MediaType.cs" Link="MediaType.cs" />
+    <Compile Include="..\HalClient.Net\Parser\EmbeddedResourceObject.cs" Link="Parser\EmbeddedResourceObject.cs" />
+    <Compile Include="..\HalClient.Net\Parser\HalJsonParser.cs" Link="Parser\HalJsonParser.cs" />
+    <Compile Include="..\HalClient.Net\Parser\HalJsonParseResult.cs" Link="Parser\HalJsonParseResult.cs" />
+    <Compile Include="..\HalClient.Net\Parser\IEmbeddedResourceObject.cs" Link="Parser\IEmbeddedResourceObject.cs" />
+    <Compile Include="..\HalClient.Net\Parser\IHalJsonParser.cs" Link="Parser\IHalJsonParser.cs" />
+    <Compile Include="..\HalClient.Net\Parser\IHaveLinkRelation.cs" Link="Parser\IHaveLinkRelation.cs" />
+    <Compile Include="..\HalClient.Net\Parser\ILinkObject.cs" Link="Parser\ILinkObject.cs" />
+    <Compile Include="..\HalClient.Net\Parser\IResourceObject.cs" Link="Parser\IResourceObject.cs" />
+    <Compile Include="..\HalClient.Net\Parser\IRootResourceObject.cs" Link="Parser\IRootResourceObject.cs" />
+    <Compile Include="..\HalClient.Net\Parser\IStateValue.cs" Link="Parser\IStateValue.cs" />
+    <Compile Include="..\HalClient.Net\Parser\LinkObject.cs" Link="Parser\LinkObject.cs" />
+    <Compile Include="..\HalClient.Net\Parser\ResourceObjectBase.cs" Link="Parser\ResourceObjectBase.cs" />
+    <Compile Include="..\HalClient.Net\Parser\RootResourceObject.cs" Link="Parser\RootResourceObject.cs" />
+    <Compile Include="..\HalClient.Net\Parser\StateValue.cs" Link="Parser\StateValue.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Parser\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="1.1.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+    <PackageReference Include="Tavis.UriTemplates" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>
